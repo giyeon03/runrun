@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>런닝맨</title>
+</head>
+<style>
+*{
+    margin: 0;
+    padding: 0;
+}
+    .box00{
+        height: 609px;
+    }
+    .sbox00{
+        height: 609px;
+        margin: 0 auto; 
+        background-image: url(images/1.png)
+    }
+    .wrap00{
+        height: 609px;
+        margin: 0 auto; 
+        position: absolute;
+    }
+    .box01{
+        height: 717px;
+        top: 609px;
+    }
+    .sbox01{
+        height: 717px;
+        margin: 0 auto; 
+        background-image: url(images/2.png)
+    }
+    .wrap01{
+        height: 717px;
+        top: 609px;
+        margin: 0 auto; 
+        position: absolute;
+    }
+    .textbox01{
+        display: block;
+        top: 50px;
+        left: 93px;
+        color: white;
+        font-size: 45px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox02{
+        display: block;
+        color: white;
+        font-size: 28px;
+        top: 125px;
+        left: 58px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox03{
+        display: block;
+        color: white;
+        font-size: 18px;
+        top: 145px;
+        left: 42px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox04{
+        display: block;
+        color: #4368E8;
+        font-size: 18px;
+        top: 165px;
+        left: 42px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .box02{
+        height: 923px;
+        top: 1326px;
+    }
+    .sbox02{
+        height: 923px;
+        margin: 0 auto; 
+       background-image: url(images/유재석.png)
+    }
+    .wrap02{
+        height: 923px;
+        top: 1326px;
+        margin: 0 auto; 
+        position: absolute;
+    }
+    .textbox05{
+        display: block;
+        color: #3A63B7;
+        font-size: 45px;
+        top: 50px;
+        left: 131px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox06{
+        display: block;
+        color: white;
+        font-size: 35px;
+        top: 520px;
+        left: 170px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox07{
+        display: block;
+        color: #3A63B7;
+        font-size: 25px;
+        top: 550px;
+        left: 108px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox08{
+        display: block;
+        color: #3A63B7;
+        font-size: 18px;
+        top: 600px;
+        left: 45px;
+        position: relative;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .box03{
+        height: 767px;
+        top: 2249px;
+    }
+    .sbox03{
+        height: 767px;
+        margin: 0 auto; 
+       background-image: url(images/지석진.png)
+    }
+    .wrap03{
+        height: 767px;
+        top: 2249px;
+        margin: 0 auto; 
+        position: absolute;
+    }
+    .textbox09{
+        display: block;
+        color: #3A63B7;
+        font-size: 35px;
+        top: 455px;
+        left: 170px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox10{
+        display: block;
+        color: #F4EFB8;
+        font-size: 25px;
+        top: 485px;
+        left: 61px;
+        position: relative;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox11{
+        display: block;
+        color: #F4EFB8;
+        font-size: 18px;
+        top: 530px;
+        left: 70px;
+        position: relative;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .box04{
+        height: 767px;
+        top: 3017px;
+    }
+    .sbox04{
+        height: 767px;
+        margin: 0 auto; 
+       background-image: url(images/김종국.png)
+    }
+    .wrap04{
+        height: 767px;
+        top: 3017px;
+        margin: 0 auto; 
+        position: absolute;
+    }
+    .textbox12{
+        display: block;
+        color: white;
+        font-size: 35px;
+        top: 453px;
+        left: 170px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox13{
+        display: block;
+        color: #3A63B7;
+        font-size: 25px;
+        top: 480px;
+        left: 43px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox14{
+        display: block;
+        color: #3A63B7;
+        font-size: 18px;
+        top: 535px;
+        left: 45px;
+        position: relative;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .box05{
+        height: 767px;
+        top: 3783px;
+    }
+    .sbox05{
+        height: 767px;
+        margin: 0 auto; 
+       background-image: url(images/하하.png)
+    }
+    .wrap05{
+        height: 767px;
+        top: 3783px;
+        margin: 0 auto; 
+        position: absolute;
+    }
+    .textbox15{
+        display: block;
+        color: #3A63B7;
+        font-size: 35px;
+        top: 455px;
+        left: 185px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox16{
+        display: block;
+        color: #F4EFB8;
+        font-size: 25px;
+        top: 480px;
+        left: 35px;
+        position: relative;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox17{
+        display: block;
+        color: #F4EFB8;
+        font-size: 18px;
+        top: 520px;
+        left: 50px;
+        position: relative;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .box06{
+        height: 767px;
+        top: 4550px;
+    }
+    .sbox06{
+        height: 767px;
+        margin: 0 auto; 
+       background-image: url(images/송지효.png)
+    }
+    .wrap06{
+        height: 767px;
+        top: 4550px;
+        margin: 0 auto; 
+        position: absolute;
+    }
+    .textbox18{
+        display: block;
+        color: white;
+        font-size: 35px;
+        top: 453px;
+        left: 170px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox19{
+        display: block;
+        color: #3A63B7;
+        font-size: 25px;
+        top: 480px;
+        left: 40px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox20{
+        display: block;
+        color: #3A63B7;
+        font-size: 18px;
+        top: 535px;
+        left: 45px;
+        position: relative;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .box07{
+        height: 767px;
+        top: 5315px;
+    }
+    .sbox07{
+        height: 767px;
+        margin: 0 auto; 
+       background-image: url(images/양세찬.png)
+    }
+    .wrap07{
+        height: 767px;
+        top: 5315px;
+        margin: 0 auto; 
+        position: absolute;
+    }
+    .textbox21{
+        display: block;
+        color: #3A63B7;
+        font-size: 35px;
+        top: 454px;
+        left: 170px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox22{
+        display: block;
+        color: #F4EFB8;
+        font-size: 25px;
+        top: 480px;
+        left: 37px;
+        position: relative;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox23{
+        display: block;
+        color: #F4EFB8;
+        font-size: 18px;
+        top: 520px;
+        left: 45px;
+        position: relative;
+        text-align: center;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .box08{
+        height: 300px;
+        top: 6084px;
+    }
+    .sbox08{
+        height: 300px;
+        margin: 0 auto; 
+       background-image: url(images/3.png)
+    }
+    .wrap08{
+        height: 300px;
+        top: 6084px;
+        margin: 0 auto; 
+        position: absolute;
+    }
+    .textbox24{
+        display: block;
+        color: #F4F4F4;
+        font-size: 10px;
+        top: 15px;
+        left: 94px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox25{
+        display: block;
+        color: #3963B7;
+        font-size: 23px;
+        top: 75px;
+        left: 56px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox26{
+        display: block;
+        color: #F4F4F4;
+        font-size: 10px;
+        top: 80px;
+        left: 56px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox27{
+        display: block;
+        color: #3963B7;
+        font-size: 23px;
+        top: 115px;
+        left: 56px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+    .textbox28{
+        display: block;
+        color: #F4F4F4;
+        font-size: 10px;
+        top: 120px;
+        left: 56px;
+        position: relative;
+        font-family: "Noto Sans KR", sans-serif;
+    }
+
+
+    
+</style>
+<body>
+    <div class="box00">
+        <div class="sbox01">
+            <div class="sbox00">
+                <div class="wrap00"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="box01">
+        <div class="sbox01">
+            <div class="wrap01">
+                <span class="textbox01"> <strong>프로그램 소개</strong> </span>
+                <span class="textbox02">기획의도 by유재석</span>
+                <span class="textbox03">
+                    버라이어티 예능이 점점 사라지고 있는 요즘 10년<br> 
+                    넘게 일요일 저녁을 책임지고 있는 대한민국 대표<br>
+                    버라이어티 예능 중 하나이다. <br>
+                    이 프로그램은 수많은 스타와 멤버들이 함께 게임<br>
+                    및 미션을 하며 여러 곳을 돌아다니는 것이 특징이<br>
+                    다. 특히 이 프로그램은 예능의 많은 재미 요소 중<br>
+                    오로지 웃음에 집중한다.
+                </span>
+                <span class="textbox04">
+                    눈 떠라! 빅재미 들어간다! <br>
+                    입 벌려라! 큰 웃음 들어간다! <br>
+                    마음을 열어라! 유익한 교훈 들어간다!
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="box02">
+        <div class="sbox02">
+            <div class="sbox02">
+                <div class="wrap02">
+                    <span class="textbox05"> <strong>멤버 소개</strong></span>
+                    <span class="textbox06"><strong>유재석</strong></span>
+                    <span class="textbox07">변치 않는 예능 까불이</span>
+                    <span class="textbox08">
+                        런닝맨의 자존심. <br>
+                        본인은 아니라는데도 멤버들이 인정하는<br> 
+                        런닝맨 외모 서열 1위. <br>
+                        <br>
+                        웃음이면 웃음, 추리면 추리, 스피드면 스피드. <br>
+                        다른 멤버들의 부러움을 사는 진짜 능력자이자<br>
+                        런닝맨의 공식 장난꾸러기. 그리고 유르스윌리스.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box03">
+        <div class="sbox03">
+            <div class="wrap03">
+                 <span class="textbox09"> <strong>지석진</strong> </span>
+                 <span class="textbox10">억지로 가족을 사랑하는 척하는<br>잠원동 휴 그랜트</span>
+                 <span class="textbox11">
+                    지석진은 초창기에 빠지려 하였으나<br>
+                    지금은 런닝맨이 최고라고 하고 다녀<br>
+                    주변에서 빈축을 사고 있음 
+                </span>   
+            </div>
+        </div>
+    </div>
+    <div class="box04">
+        <div class="sbox04">
+            <div class="sbox04">
+                <div class="wrap04">
+                    <span class="textbox12"><strong>김종국</strong></span>
+                    <span class="textbox13">여름엔 김찌찌. 그 외 계절엔 김관장</span>
+                    <span class="textbox14">
+                        내 마음은 간장 종지! <br>
+                        깡패에서 대상까지! <br>
+                        회식도 미우새를 더 챙기는 미운 새끼! <br>
+                        2020년 연예대상 수상을 축하합니다.
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="box05">
+        <div class="sbox05">
+            <div class="wrap05">
+                <span class="textbox15"><strong>하하</strong></span>
+                <span class="textbox16">79년생 연예인 중에 가장 젊은 척하는<br>더러운 콧수염</span>
+                <span class="textbox17">
+                    세 아이의 아빠이자 자타공인 런닝맨 공식 꼰대. <br>
+                    아직도 본인만 모름, 아니 인정 안 하고 싶어 함. <br>
+                    작디작은 콴 엔터테인먼트 먹여 살리려고<br>
+                    푼돈만 쥐여주면 열심히 뛰고 있는 CEO. <br>
+                    최근 나에게 과메기를 보내줬음.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="box06">
+        <div class="sbox06">
+            <div class="wrap06">
+                <span class="textbox18"><strong>송지효</strong></span>
+                <span class="textbox19">본명은 천성임, 천수연. 별명은 적토마</span>
+                <span class="textbox20">
+                    런닝맨 멤버들과의 케미가<br>
+                    엄청 있다고 할 수는 없지만 그렇다고 없다고 할 수는 없다. <br>
+                    한 마디로 지효는 요즘 웃긴다.
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="box07">
+        <div class="sbox07">
+            <div class="wrap07">
+                <span class="textbox21"><strong>양세찬</strong></span>
+                <span class="textbox22">양세형 동생</span>
+                <span class="textbox23">
+                    잇몸 미남. 여자 친구가 있는 듯함. <br>
+                    김종국의 애착 인형. <br>
+                    하지만 뒤에서 김종국 욕을 하고 다님. <br>
+                    종국은 일단 모른 척하다가 증거가 잡히면 죽일 계획
+                </span>
+            </div>
+        </div>
+    </div>
+    <div class="box08">
+        <div class="sbox08">
+            <div class="wrap08">
+                <span class="textbox24">
+                    이용약관 ㅣ 개인정보처리방침 ㅣ 청소년보호정책 ㅣ SBS 방송편성규약 ㅣ 사이트맵
+                </span>
+                <span class="textbox25"><strong>SBS</strong></span>
+                <span class="textbox26">
+                    서울특별시 양천구 목동서로 161 / 대표이사 방문신<br>
+                    방송관련문의 02.2061-0006
+                </span>
+                <span class="textbox27"><strong>SBSi</strong></span>
+                <span class="textbox28">    
+                    서울특별시 양천구 목동서로 161 SBS방송센터 17층<br>
+                    대표이사 김기헌 / 사업자 번호 598-88-00752<br>
+                    홈페이지 이용문의 1577-1003 /Email / 고객센터
+                </span> 
+            </div>
+        </div>
+    </div>
+      
+
+</body>
+</html>
